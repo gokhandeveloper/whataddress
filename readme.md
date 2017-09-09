@@ -32,9 +32,7 @@ Navigate to the directory in which the repo files live, and select it.
 
 ## Authors
 
-* **Gokhan Dilek** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Gokhan Dilek** - *Initial work* - )
 
 ## License
 
