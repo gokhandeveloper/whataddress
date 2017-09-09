@@ -1,0 +1,7 @@
+{
+  "exchangeSites": {
+    "bitrex": "https://*bittrex.com/",
+    "bitfinex": "https://*bitfinex.com/",
+    "coinbase": "https://*coinbase.com/"
+  }
+}
