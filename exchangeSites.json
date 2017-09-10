@@ -1,7 +1,8 @@
 {
   "exchangeSites": {
-    "bitrex": "https://*bittrex.com/",
+    "bittrex": "https://*bittrex.com/",
     "bitfinex": "https://*bitfinex.com/",
-    "coinbase": "https://*coinbase.com/"
+    "coinbase": "https://*coinbase.com/",
+    "btcmarkets": "https://*btcmarkets.com.au/"
   }
 }

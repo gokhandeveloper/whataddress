@@ -5,7 +5,7 @@ I will also build a Windows and Mac version in the near future.
 
 ## Getting Started
 
-Until the extension is available on Google chrome store, you can turn on the developer mode and install the extension.
+Turn on the developer mode and install the extension.
 ### Prerequisites
 
 Just google chrome or chromium or safari(not tested).
