@@ -9,7 +9,6 @@ Turn on the developer mode and install the extension.
 ### Prerequisites
 
 Just google chrome or chromium or safari(not tested).
-```
 
 ### Installing
 
