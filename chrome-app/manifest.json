@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+
+  "name": "What coin address did I copy?",
+  "description": "This extension watches copy/paste actions on certain exchange sites and lets you know which address was copied into clipboard. It does not transfer address to any bakend service. Everything happens in your system and in your browser. Full source code is available on github",
+  "version": "0.1",
+  "icons": {
+    "128": "assets/icon_128.png"
+  },
+
+  "browser_action": {
+    "default_icon": "/assets/icon_128.png",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": ["app.js"],
+    "persistent": false
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://*.google.com/*"],
+      "js": ["app.js"]
+    }
+  ],
+
+  "options_ui": {
+    // Required.
+    "page": "options.html",
+    // Recommended.
+    "chrome_style": true
+
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs"
+  ]
+}

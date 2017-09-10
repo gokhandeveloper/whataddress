@@ -1,0 +1,6 @@
+body: { padding: 10px; }
+
+textarea {
+    overflow-y: scroll;
+    height: 100px;
+}

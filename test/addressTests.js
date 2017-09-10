@@ -44,7 +44,7 @@ describe("Litecoin address", function() {
 
 });
 
-describe("Etherium address", function() {
+describe("Ethereum address", function() {
 
     it("check etherium address", function() {
 
