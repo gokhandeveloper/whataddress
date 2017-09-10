@@ -19,8 +19,7 @@ function save_options() {
 function restore_options() {
     // Use default value color = 'red' and likesColor = true.
     chrome.storage.sync.get({
-        sites: 'https://bittrex.com',
-        likesColor: true
+        sites: 'https://bittrex.com'
     }, function(items) {
         document.getElementById('sites').value = items.sites;
     });
