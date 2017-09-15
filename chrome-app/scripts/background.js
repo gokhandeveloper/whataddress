@@ -18,6 +18,7 @@ function selectTab(direction) {
       return;
     }
     chrome.tabs.getSelected(null, function(currentTab) {
+      console.log("i am selected");
       var toSelect;
       switch (direction) {
         case 'next':
@@ -52,5 +53,4 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     sendResponse({});
   }
 });
-
 

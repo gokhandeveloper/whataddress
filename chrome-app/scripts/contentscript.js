@@ -1,6 +1,14 @@
 'use strict';
 /* global Mousetrap */
 
+
+console.log("hello");
+chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
+    var url = tabs[0].url;
+    console.log("The url is" + url);
+});
+
+
 var keySettings;
 
 /**
@@ -25,8 +33,8 @@ chrome.runtime.sendMessage({action: 'getKeys'}, function(response) {
  *
  * @param keySetting
  */
-var activateKey = function(keySetting) {
-    var action = function() {
+let activateKey = function(keySetting) {
+    let action = function() {
         if (!isAllowedSite(keySetting)) return false;
         doAction(keySetting);
         return false;
