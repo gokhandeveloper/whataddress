@@ -1,9 +1,7 @@
 'use strict';
 
 let firstCharacterisL = function (address) {
-    if ((address.charAt(0)) == "L") {
-        return true;
-    }
+    if ((address.charAt(0)) == "L") return true;
     return false;
 };
 

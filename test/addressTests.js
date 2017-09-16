@@ -25,6 +25,8 @@ describe("Bitcoin address", function() {
 
     });
 
+
+
 });
 
 describe("Litecoin address", function() {

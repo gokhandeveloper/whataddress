@@ -1,9 +1,18 @@
 {
   "manifest_version": 2,
 
-  "name": "What coin address did I copy?",
+  "name": "What coin address did I copy/paste?",
   "description": "This extension watches copy/paste actions on certain exchange sites and lets you know which address was copied into clipboard or pasted from clipboard. It does not transfer address to any backend service. Everything happens in your system and in your browser. Full source code is available on github",
   "version": "0.1",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "clipboardWrite",
+    "browsingData",
+    "storage",
+    "bookmarks",
+    "<all_urls>"
+  ],
   "icons": {
     "128": "assets/icon_128.png"
   },
@@ -13,31 +22,28 @@
     "default_popup": "index.html"
   },
   "background": {
-    "scripts": ["scripts/background.js"],
+    "scripts": ["js/background.js"],
     "persistent": false
   },
 
   "content_scripts": [
     {
-      "matches": ["https://*.google.com/*"],
-      "js": ["scripts/contentscript.js"]
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "addresses/bitcoin.js",
+        "addresses/litecoin.js",
+        "js/mousetrap.min.js",
+        "js/contentscript.js"
+
+
+      ],
+      "all_frames": true
     }
   ],
 
-  "commands": {
-    "toggle-feature": {
-      "suggested_key": {
-        "default": "Ctrl+c",
-        "mac": "Command+c" },
-      "description": "Send a 'toggle-feature' event to the extension"
-    },
-    "_execute_browser_action": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+F",
-        "mac": "MacCtrl+Shift+F"
-      }
-    }
-  }
 
   "options_ui": {
     // Required.
@@ -45,10 +51,5 @@
     // Recommended.
     "chrome_style": true
 
-  },
-  "permissions": [
-    "storage",
-    "activeTab",
-    "tabs"
-  ]
+  }
 }
