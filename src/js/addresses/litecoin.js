@@ -20,7 +20,7 @@
         return false;
     };
 
-    Litecoin.prototype.numberOfCharactersAreBetween26And33 = function(address) {
+    Litecoin.prototype.numberOfCharactersAreBetween26And35 = function(address) {
         if(26<=address.length <=35 ) return true;
         return false;
 
@@ -48,19 +48,11 @@
 
     Litecoin.init();
 
-    // expose mousetrap to the global object
     window.Litecoin = Litecoin;
 
-    // expose as a common js module
+
     if (typeof module !== 'undefined' && module.exports) {
         module.exports = Litecoin;
-    }
-
-    // expose mousetrap as an AMD module
-    if (typeof define === 'function' && define.amd) {
-        define(function() {
-            return Litecoin;
-        });
     }
 
 }) (typeof window !== 'undefined' ? window : null, typeof  window !== 'undefined' ? document : null);

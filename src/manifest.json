@@ -33,8 +33,8 @@
         "https://*/*"
       ],
       "js": [
-        "addresses/bitcoin.js",
-        "addresses/litecoin.js",
+        "js/addresses/bitcoin.js",
+        "js/addresses/litecoin.js",
         "js/mousetrap.min.js",
         "js/contentscript.js"
 

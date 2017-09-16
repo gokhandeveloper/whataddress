@@ -2,7 +2,9 @@
 
 Mousetrap.bind(['command+c', 'ctrl+c'], function(e) {
     console.log("i am copying");
-    checkAddresses();
+    if(verifyAddress()==="Bitcoin") return promptAddress(bitcoinMessage());
+    if(verifyAddress()==="Litecoin") return promptAddress(litecoinMessage());
+
 
 });
 
@@ -11,11 +13,6 @@ Mousetrap.bind(['command+v', 'ctrl+v'], function(e) {
 
 });
 
-function checkAddresses() {
-    if(verifyAddress()==="Bitcoin") return console.log("Bitcoin address") ;
-    if(verifyAddress()==="Litecoin") return console.log("Litecoin address") ;
-
-}
 
 function verifyAddress() {
 
@@ -33,4 +30,17 @@ function getSelectionText() {
     }
     console.log(text);
     return text;
+}
+
+function bitcoinMessage() {
+    return "This is a BTC(BITCOIN) address- To the MOON GUYS TO THE MOOOON!!";
+}
+
+function litecoinMessage() {
+    return "CHUCK IS IN THE HOUSE!!!";
+}
+
+
+function promptAddress(coin) {
+    window.prompt(coin +"Please copy to clipboard: Ctrl+C for Windows&Linux or Command+C for MAC THEN Enter", getSelectionText());
 }
