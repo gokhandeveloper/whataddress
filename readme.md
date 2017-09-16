@@ -1,7 +1,6 @@
 # What Address
 
 This Google chrome extension lets you see the type of coin that is copied in to clipboard.
-I will also build a Windows and Mac version in the near future.
 
 ## Getting Started
 
@@ -12,17 +11,19 @@ Just google chrome or chromium or safari(not tested).
 
 ### Installing
 
+**You can run the app directly from the source:**
+
 Download this repo.
 
-Visit chrome://extensions in your browser (or open up the Chrome menu by clicking the icon to the far right of the Omnibox:  The menu's icon is three horizontal bars. and select Extensions under the Tools menu to get to the same place).
+Visit chrome://extensions in your browser.
 
 Ensure that the Developer mode checkbox in the top right-hand corner is checked.
 
 Click Load unpacked extension… to pop up a file-selection dialog.
 
-Navigate to the directory in which the repo files live, and select it.
+Navigate to the repo directory/src in which the extensions files live, and select it.
 
-
+Or **you can just install the build file under /build**
 
 ## Built With Love
 
@@ -31,7 +32,7 @@ Navigate to the directory in which the repo files live, and select it.
 
 ## Authors
 
-* **Gokhan Dilek** - *Initial work* - )
+* **Gokhan Dilek** - *Initial work* - 
 
 ## License
 
