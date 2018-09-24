@@ -1,6 +1,6 @@
 # What Address
 
-This Google chrome extension lets you see the type of coin that is copied in to clipboard.
+This Google chrome extension lets you see the type of coin address that is copied in to clipboard.
 
 ## Getting Started
 
