@@ -1,7 +1,7 @@
 'use strict';
 let assert = require('assert');
 
-// BTC test address: 1GQpz3e6pwDSzH5cV4tjRdbwHrT1BYS6rq
+// BTC test address: 
 // Litecoin test address: LbmXBtjMCzLZG3R95MkSsPD4VcVmVsXT5y
 //Ethereum test address: 0x7b38fcb1bbd5193e419a3c8a1d69508181ec4da2
 
